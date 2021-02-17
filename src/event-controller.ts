@@ -138,7 +138,7 @@ export const eventController = (config: IConfig): express.Router => {
   *
   *  @apiParam {String} [id] Event id
   */
-  controller.delete('/', bodyValidator, validator_handler, async (request, response, next) => {
+  controller.delete('/:id', bodyValidator, validator_handler, async (request, response, next) => {
     await eventModel(config).then((model) => {
       model.delete(request.params['id'])
       .then((isDeleted) => {
