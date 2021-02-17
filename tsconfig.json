@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es2017"
+    ],
+    "removeComments": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "sourceMap": true,
+    "target": "es2017",
+    "outDir": "dist",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "importHelpers": true,
+    "alwaysStrict": true,
+  },
+  "include": [
+    "./src/*.ts",
+    "*.ts"
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    "config/*",
+    ".vscode/**/*",
+    "../_/**"
+  ]
+}
